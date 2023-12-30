@@ -1,0 +1,13 @@
+.sticky{
+    left: 0;
+}
+
+tbody tr .sticky{
+    background: #1F2937;
+}
+tr .sticky:hover{
+    background: #374151!important;
+}
+thead tr .sticky{
+    background: #374151;
+}
