@@ -11,7 +11,7 @@ export const routes: Routes = [
                 loadComponent: () => import ('./domains/general/pages/home/home.component').then(m => m.HomeComponent)
             },
             {
-                path:'equipo/:id',
+                path:'equipo/:bdid',
                 loadComponent: () => import ('./domains/general/pages/team-detail/team-detail.component').then(m => m.TeamDetailComponent)
             },
             {

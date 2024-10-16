@@ -1,7 +1,7 @@
 export interface Team{
-    id: string;
-    name: string;
-    image: string;
+    bdid: string;
+    nombre: string;
+    image?: string;
     games?: number;
     wins?: number;
     losses?: number;

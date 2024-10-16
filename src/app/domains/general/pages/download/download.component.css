@@ -1,0 +1,10 @@
+.centrarD{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+.texto-just{
+    text-align: justify;
+}

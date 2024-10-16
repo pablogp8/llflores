@@ -1,0 +1,15 @@
+.centrarD{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.imagen-ajustada {
+    width: 50%; /* Puedes usar porcentajes también, ej: 50% */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 2px solid #3498db;
+  }

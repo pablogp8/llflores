@@ -29,28 +29,30 @@
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>                            
-                            <th scope="col" class="px-4 py-3 sticky">EQUIPO</th>
-                            <th scope="col" class="px-4 py-3">JJ</th>
-                            <th scope="col" class="px-4 py-3">JG</th>
-                            <th scope="col" class="px-4 py-3">JP</th>
-                            <th scope="col" class="px-4 py-3">JD</th>
-                            <th scope="col" class="px-4 py-3">PTS</th>
-                            <th scope="col" class="px-4 py-3">P. F</th>
-                            <th scope="col" class="px-4 py-3">P. C</th>
-                            <th scope="col" class="px-4 py-3">DIF</th>
+                          <th scope="col" class="px-4 py-3">POS</th>
+                          <th scope="col" class="px-4 py-3 sticky">EQUIPO</th>
+                          <th scope="col" class="px-4 py-3">JJ</th>
+                          <th scope="col" class="px-4 py-3">JG</th>
+                          <th scope="col" class="px-4 py-3">JP</th>
+                          <th scope="col" class="px-4 py-3">JD</th>
+                          <th scope="col" class="px-4 py-3">PTS</th>
+                          <th scope="col" class="px-4 py-3">P. F</th>
+                          <th scope="col" class="px-4 py-3">P. C</th>
+                          <th scope="col" class="px-4 py-3">DIF</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700" *ngFor="let equipo of equipos">
-                            <th scope="row" class="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white sticky">{{equipo.name}}</th>
-                            <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.games}}</td>
-                            <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.wins}}</td>
-                            <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.losses}}</td>
-                            <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.lossesdef}}</td>
-                            <td class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white ">{{equipo.points}}</td>                            
-                            <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.pointsf}}</td>                            
-                            <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.pointsc}}</td>
-                            <td class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white ">{{equipo.difference}}</td>
+                        <tr class="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700" *ngFor="let equipo of equipos; index as i">
+                          <td class="bg-primary-100 text-center text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{i+1}}</td>
+                          <td class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white ">{{equipo.nombre}}</td>
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.games}}</td>
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.wins}}</td>
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.losses}}</td>
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.lossesdef}}</td>
+                          <td class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white ">{{equipo.points}}</td>                            
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.pointsf}}</td>                            
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.pointsc}}</td>
+                          <td class="px-4 py-2 text-right font-medium text-gray-900 whitespace-nowrap dark:text-white ">{{equipo.difference}}</td>
                         </tr>
                         
                     </tbody>

@@ -1,0 +1,128 @@
+[
+    {
+        "bdid": 100,
+        "nombre": "3k",
+        "telefono": "45588005",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Azul",
+        "imagen": null
+    },
+    {
+        "bdid": 101,
+        "nombre": "ABT",
+        "telefono": "",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Verde",
+        "imagen": null
+    },
+    {
+        "bdid": 102,
+        "nombre": "ASTROS",
+        "telefono": "40592792",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Blanco",
+        "imagen": null
+    },
+    {
+        "bdid": 103,
+        "nombre": "BULLS",
+        "telefono": "",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "",
+        "imagen": null
+    },
+    {
+        "bdid": 104,
+        "nombre": "EMUA",
+        "telefono": "",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "",
+        "imagen": null
+    },
+    {
+        "bdid": 105,
+        "nombre": "HAWKS",
+        "telefono": "",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Negro/amarillo",
+        "imagen": null
+    },
+    {
+        "bdid": 106,
+        "nombre": "INDIOS",
+        "telefono": "46443027",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Negro",
+        "imagen": null
+    },
+    {
+        "bdid": 107,
+        "nombre": "MAXI TECPAN",
+        "telefono": "56264794",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Morado",
+        "imagen": null
+    },
+    {
+        "bdid": 108,
+        "nombre": "TALENTO DE BARRIO",
+        "telefono": "",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Negro/celeste",
+        "imagen": null
+    },
+    {
+        "bdid": 109,
+        "nombre": "TALENTO JR",
+        "telefono": "",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "",
+        "imagen": null
+    },
+    {
+        "bdid": 110,
+        "nombre": "THUNDER",
+        "telefono": "45715102",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Amarillo",
+        "imagen": null
+    },
+    {
+        "bdid": 111,
+        "nombre": "VAGOS",
+        "telefono": "",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Blanco",
+        "imagen": null
+    },
+    {
+        "bdid": 112,
+        "nombre": "WOLFS",
+        "telefono": "37564695",
+        "anio": "2023",
+        "rama": "M",
+        "colores": "Celeste/amarillo",
+        "imagen": null
+    },
+    {
+        "bdid": 119,
+        "nombre": "RDD",
+        "telefono": "",
+        "anio": "2024",
+        "rama": "M",
+        "colores": "",
+        "imagen": ""
+    }
+]

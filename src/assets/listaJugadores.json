@@ -1,0 +1,135 @@
+[
+	{
+		"bdid":100,
+        "nombre": "3K",
+        "color": "",
+		"jugadores": [
+			{
+				"bdid": 110,
+				"nombre": "Pedro Pablo",
+				"apellido": "Pinzón Moreira"
+			},
+			{
+				"bdid": 111,
+				"nombre": "Ángel",
+				"apellido": "Cojtí Esquit"
+			},
+			{
+				"bdid": 112,
+				"nombre": "Nefi",
+				"apellido": "Ajpop Teleguario"
+			},
+			{
+				"bdid": 113,
+				"nombre": "Brandon Manuel De Jesús",
+				"apellido": "Girón Rodas"
+			},
+			{
+				"bdid": 114,
+				"nombre": "Hugo Isaak",
+				"apellido": "Saquec"
+			},
+			{
+				"bdid": 115,
+				"nombre": "Carlos Francisco",
+				"apellido": "Pineda Tocorá"
+			},
+			{
+				"bdid": 116,
+				"nombre": "Bryan Francisco",
+				"apellido": "Román Moreira"
+			},
+			{
+				"bdid": 117,
+				"nombre": "Edwin Adolfo",
+				"apellido": "Santizo Aguilar"
+			},
+			{
+				"bdid": 118,
+				"nombre": "Antonio",
+				"apellido": "Muller"
+			},
+			{
+				"bdid": 119,
+				"nombre": "Daniel Antonio",
+				"apellido": "Cojtí Esquit"
+			},
+			{
+				"bdid": 120,
+				"nombre": "Carlos René",
+				"apellido": "Pineda Noriega"
+			},
+			{
+				"bdid": 121,
+				"nombre": "Jefereson JanCarlo",
+				"apellido": "Pineda Tocorá"
+			}
+		]
+	}, {
+		"bdid": 101,
+        "nombre": "ABT",
+        "color": "",
+		"jugadores": [
+			{
+				"bdid": 133,
+				"nombre": "Eldan Manuel",
+				"apellido": "Girón Santos"
+			},
+			{
+				"bdid": 134,
+				"nombre": "Jilmar Estuardo",
+				"apellido": "Aleman Aleman"
+			},
+			{
+				"bdid": 135,
+				"nombre": "Randy Alexsis",
+				"apellido": "Galindo Rodas"
+			},
+			{
+				"bdid": 136,
+				"nombre": "Herberth Augusto",
+				"apellido": "Galindo Roman"
+			},
+			{
+				"bdid": 137,
+				"nombre": "Jorge Amilcar",
+				"apellido": "Tobias Juarez"
+			},
+			{
+				"bdid": 138,
+				"nombre": "Edgar Jeovany",
+				"apellido": "Galindo Rivera"
+			},
+			{
+				"bdid": 139,
+				"nombre": "Marlon Vinicio",
+				"apellido": "Martínez Arriola"
+			},
+			{
+				"bdid": 140,
+				"nombre": "Eduardo Josue",
+				"apellido": "Galindo Román"
+			},
+			{
+				"bdid": 141,
+				"nombre": "Jonas Adolfo",
+				"apellido": "Juarez Sanchez"
+			},
+			{
+				"bdid": 142,
+				"nombre": "Carlos Alejandro Antonio",
+				"apellido": "Castellanos Giron"
+			},
+			{
+				"bdid": 143,
+				"nombre": "Luis Aroldo",
+				"apellido": "Morales Noriega"
+			},
+			{
+				"bdid": 144,
+				"nombre": "Gerson Eugenio",
+				"apellido": "Rodas Chan"
+			}
+		]
+	}
+]

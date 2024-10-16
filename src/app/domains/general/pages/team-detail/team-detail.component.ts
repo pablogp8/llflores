@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { Player } from '../../../shared/models/player.model';
 import { CommonModule } from '@angular/common';
+import { EquipoService } from '../../../shared/service/equipo.service';
+import { GeneralDataService } from '../../../shared/service/generalData.service';
 
 @Component({
   selector: 'app-team-detail',
@@ -10,104 +12,52 @@ import { CommonModule } from '@angular/common';
   styleUrl: './team-detail.component.css'
 })
 export class TeamDetailComponent {
-jugadores: Player[] = [{
-  name:'César Marvin Alexander Marroquin Moreira',
-  numb: 1,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,
-},{
-  name:'Fredy Alexander Díaz Cutzal ',
-  numb: 2,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,
-},{
-  name:'Juan Carlos Galindo Román',
-  numb: 3,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,
-},{
-  name:'Marvin Orlando Marroquin Juárez',
-  numb: 4,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,
-},{
-  name:'Luis David Vielman Cáceres',
-  numb: 5,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,
-},{
-  name:'Gerber Israel Pinzón Siquinajay',
-  numb: 6,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,
-},{
-  name:'José Luis Pinzón de León',
-  numb: 7,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,
-},{
-  name:'Alexander Héctor Iván Pinzón Higueros',
-  numb: 8,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,
-},{
-  name:'Silvestre Rafael Arenales Pinzón ',
-  numb: 9,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,
-},{
-  name:'Sergio Geovanny Blanco Noriega ',
-  numb: 10,
-  points: 0,
-  points3: 0,
-  assists: 0,
-  rebounds: 0,
-  blocks: 0,
-  steals: 0,
-  lost: 0,}]
+  @Input() bdid?:number;
+  jugadores: Player[] = [];
+  private equipoService = inject(EquipoService);
+  private equipoLocalService = inject(GeneralDataService);
+  nombreEqp = "";
+
+  ngOnInit() {
+    console.log('aca inicia');
+    console.log(this.bdid);
+    console.log('hola a todos');
+    if (this.bdid){
+      this.cargaJugadores2(this.bdid);
+    }
+  }
+
+  cargaJugadores(bdid: number){
+    this.jugadores = [];
+    this.equipoService.getListaJugadores(bdid).subscribe({
+      next: (data)=> {
+        console.log(data);
+        this.jugadores = data;
+      }, 
+      error: (err) => {
+        console.error(err);
+      }
+      
+    })
+  }
+
+  cargaJugadores2(bdid: number){
+    this.jugadores = [];
+    this.nombreEqp =  "";
+    this.equipoLocalService.getJugadores(bdid).subscribe({
+      next: (data)=> {
+        console.log(data);
+        const tmpEqp= data.find(item=> item.bdid === Number(bdid));
+        if (tmpEqp !== undefined){
+          this.nombreEqp = tmpEqp.nombre;
+          this.jugadores = tmpEqp.jugadores;
+          console.log(tmpEqp.jugadores);
+        }
+      }, 
+      error: (err) => {
+        console.error(err);
+      }
+      
+    })
+  }
 }

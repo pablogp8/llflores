@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Team } from '../../../shared/models/team.model';
 import { RouterLinkWithHref } from '@angular/router';
+import { EquipoService } from '../../../shared/service/equipo.service';
+import { GeneralDataService } from '../../../shared/service/generalData.service';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -10,59 +12,94 @@ import { RouterLinkWithHref } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  private equipoService = inject(EquipoService);
+  private equipoService2= inject(GeneralDataService);
+
   equipos: Team[] = [
     {
-      id: '1',
-      name: '3K',
+      bdid: '1',
+      nombre: '3K',
       image: ''
     },{
-      id: '2',
-      name: 'ABT',
+      bdid: '2',
+      nombre: 'ABT',
       image: ''
     },{
-      id: '3',
-      name: 'ASTROS',
+      bdid: '3',
+      nombre: 'ASTROS',
       image: ''
     },{
-      id: '4',
-      name: 'BULLS',
+      bdid: '4',
+      nombre: 'BULLS',
       image: ''
     },{
-      id: '5',
-      name: 'EMUA',
+      bdid: '5',
+      nombre: 'EMUA',
       image: ''
     },{
-      id: '6',
-      name: 'HAWKS',
+      bdid: '6',
+      nombre: 'HAWKS',
       image: ''
     },{
-      id: '7',
-      name: 'INDIOS',
+      bdid: '7',
+      nombre: 'INDIOS',
       image: ''
     },{
-      id: '8',
-      name: 'MAXI TECPÁN',
+      bdid: '8',
+      nombre: 'MAXI TECPÁN',
       image: ''
     },{
-      id: '9',
-      name: 'TALENTO DE BARRIO',
+      bdid: '9',
+      nombre: 'TALENTO DE BARRIO',
       image: ''
     },{
-      id: '10',
-      name: 'TALENTO JR',
+      bdid: '10',
+      nombre: 'TALENTO JR',
       image: ''
     },{
-      id: '11',
-      name: 'THUNDER',
+      bdid: '11',
+      nombre: 'THUNDER',
       image: ''
     },{
-      id: '12',
-      name: 'VAGOS',
+      bdid: '12',
+      nombre: 'VAGOS',
       image: ''
     },{
-      id: '13',
-      name: 'WOLFS',
+      bdid: '13',
+      nombre: 'WOLFS',
       image: ''
     }
   ]
+
+  ngOnInit(){
+    this.getEquipos();
+  }
+
+  getMasculino(){
+    this.equipos = [];  
+    console.log('ptr');
+    this.equipoService.getListaEquipos('masculino').subscribe({
+      next: (data) =>{
+        console.log(data);
+        this.equipos = data;
+      },
+      error: (err) =>{
+        console.error(err);
+      }
+    })
+  }
+
+  getEquipos(){
+    this.equipos =  [];
+    console.log('ptr');
+    this.equipoService2.getEquiposLocal().subscribe({
+      next: (data) =>{
+        console.log(data);
+        this.equipos= data;
+      },
+      error: (err) =>{
+        console.error(err);
+      }
+    });
+  }
 }
