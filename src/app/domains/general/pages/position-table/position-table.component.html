@@ -1,6 +1,6 @@
-<div class="border-b border-gray-200 dark:border-gray-700">
+<div class="border-b border-gray-700">
     <nav class="-mb-0.5 flex justify-center space-x-6" aria-label="Tabs" role="tablist">
-      <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400 dark:hover:text-blue-500 active" id="horizontal-alignment-item-1" data-hs-tab="#horizontal-alignment-1" aria-controls="horizontal-alignment-1" role="tab">
+      <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap focus:outline-none focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none text-gray-400 hover:text-blue-500 active" id="horizontal-alignment-item-1" data-hs-tab="#horizontal-alignment-1" aria-controls="horizontal-alignment-1" role="tab">
         Masculino
       </button>
       
@@ -9,23 +9,23 @@
   
   <div class="mt-3">
     <div id="horizontal-alignment-1" role="tabpanel" aria-labelledby="horizontal-alignment-item-1">
-      <p class="px-4 text-gray-500 dark:text-gray-400">
+      <p class="px-4 text-gray-400">
         Tabla general de posiciones.
       </p>
     </div>
     <div id="horizontal-alignment-2" class="hidden" role="tabpanel" aria-labelledby="horizontal-alignment-item-2">
-      <p class="text-gray-500 dark:text-gray-400">
-        This is the <em class="font-semibold text-gray-800 dark:text-gray-200">second</em> item's tab body.
+      <p class="text-gray-400">
+        This is the <em class="font-semibold text-gray-200">second</em> item's tab body.
       </p>
     </div>    
   </div>
 
-<section class="bg-gray-50 dark:bg-gray-900 py-3 sm:py-5">
+<section class="bg-gray-900 py-3 sm:py-5">
     <div class="px-4 mx-auto max-w-screen-2xl lg:px-12">
-        <div class="relative overflow-hidden bg-white shadow-md dark:bg-gray-800 sm:rounded-lg">
+        <div class="relative overflow-hidden shadow-md bg-gray-800 sm:rounded-lg">
             <div class="overflow-x-auto">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <table class="w-full text-sm text-left text-gray-400">
+                    <thead class="text-xs uppercase bg-gray-700 text-gray-400">
                         <tr>                            
                           <th scope="col" class="px-4 py-3">POS</th>
                           <th scope="col" class="px-4 py-3 sticky">EQUIPO</th>
@@ -40,17 +40,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700" *ngFor="let equipo of equipos; index as i">
-                          <td class="bg-primary-100 text-center text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{i+1}}</td>
-                          <td class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white sticky">{{equipo.nombre}}</td>
-                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.games}}</td>
-                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.wins}}</td>
-                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.losses}}</td>
-                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.lossesdef}}</td>
-                          <td class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white ">{{equipo.points}}</td>                            
-                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.pointsf}}</td>                            
-                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded dark:bg-primary-900 dark:text-primary-300">{{equipo.pointsc}}</td>
-                          <td class="px-4 py-2 text-right font-medium text-gray-900 whitespace-nowrap dark:text-white ">{{equipo.difference}}</td>
+                        <tr class="border-b border-gray-600 hover:bg-gray-700" *ngFor="let equipo of equipos; index as i">
+                          <td class="bg-primary-100 text-center text-primary-800 font-medium px-4 py-2 rounded bg-primary-900 text-primary-300">{{i+1}}</td>
+                          <td class="px-4 py-2 font-medium whitespace-nowrap text-white sticky">{{equipo.nombre}}</td>
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded bg-primary-900 text-primary-300">{{equipo.games}}</td>
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded bg-primary-900 text-primary-300">{{equipo.wins}}</td>
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded bg-primary-900 text-primary-300">{{equipo.losses}}</td>
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded bg-primary-900 text-primary-300">{{equipo.lossesdef}}</td>
+                          <td class="px-4 py-2 font-medium whitespace-nowrap text-white ">{{equipo.points}}</td>                            
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded bg-primary-900 text-primary-300">{{equipo.pointsf}}</td>                            
+                          <td class="bg-primary-100 text-primary-800 font-medium px-4 py-2 rounded bg-primary-900 text-primary-300">{{equipo.pointsc}}</td>
+                          <td class="px-4 py-2 text-right font-medium whitespace-nowrap text-white ">{{equipo.difference}}</td>
                         </tr>
                         
                     </tbody>

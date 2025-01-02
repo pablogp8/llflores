@@ -1,21 +1,21 @@
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
         <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{{nombreEqp}}</h2>
-            <!--<p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>-->
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">{{nombreEqp}}</h2>
+            
         </div> 
         <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2" >
-            <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700" *ngFor="let jugador of jugadores">
+            <div class="items-center rounded-lg shadow sm:flex bg-gray-800 border-gray-700" *ngFor="let jugador of jugadores">
                 <div class="centrarD">
                     <img class="imagen-ajustada  sm:rounded-l-lg" src="../../../../../assets/jugadorff.jpeg" alt="Bonnie Avatar">
                 </div>
                 <div class="p-3">
-                    <h3 class="text-base font-bold tracking-tight text-gray-900 dark:text-white" style="text-align: center;">
+                    <h3 class="text-base font-bold tracking-tight text-white" style="text-align: center;">
                         {{jugador.nombre}} {{jugador.apellido}}
                     </h3>
-                    <p class="mt-1 text-gray-500 dark:text-gray-400" style="text-align: center;">Camisola <span class="completedC">#{{jugador.numb}}</span> MVP: <span class="completedC">{{jugador.mvp|number: '1.1-1'}}</span> Pts: <span class="completedC">{{jugador.points|number: '1.1-1'}}</span></p>
-                    <p class="font-light text-gray-500 dark:text-gray-400" style="text-align: center;">Asist: <span class="completedC"> {{jugador.assists|number: '1.1-1'}}</span> Rebotes: <span class="completedC">{{jugador.rebounds|number: '1.1-1'}} </span> Robos: <span class="completedC">{{jugador.steals|number: '1.1-1'}}</span></p>
-                    <p class="mb-2 font-light text-gray-500 dark:text-gray-400" style="text-align: center;">Pts 3: <span class="completedC">{{jugador.points3|number: '1.1-1'}}</span> Bloqueos: <span class="completedC">{{jugador.blocks|number: '1.1-1'}}</span> Perd: <span class="errorC">{{jugador.lost|number: '1.1-1'}}</span> </p>                    
+                    <p class="mt-1 text-gray-400" style="text-align: center;">Camisola <span class="completedC">#{{jugador.numb}}</span> MVP: <span class="completedC">{{jugador.mvp|number: '1.1-1'}}</span> Pts: <span class="completedC">{{jugador.points|number: '1.1-1'}}</span></p>
+                    <p class="font-light text-gray-400" style="text-align: center;">Asist: <span class="completedC"> {{jugador.assists|number: '1.1-1'}}</span> Rebotes: <span class="completedC">{{jugador.rebounds|number: '1.1-1'}} </span> Robos: <span class="completedC">{{jugador.steals|number: '1.1-1'}}</span></p>
+                    <p class="mb-2 font-light text-gray-400" style="text-align: center;">Pts 3: <span class="completedC">{{jugador.points3|number: '1.1-1'}}</span> Bloqueos: <span class="completedC">{{jugador.blocks|number: '1.1-1'}}</span> Perd: <span class="errorC">{{jugador.lost|number: '1.1-1'}}</span> </p>                    
                     <div id="show-hide-collapse-heading" class="w-full overflow-x-auto transition-[height] duration-300" aria-labelledby="show-hide-collapse" *ngIf="!isCollapsed">
                         <table class="activity-table">
                             <thead>
