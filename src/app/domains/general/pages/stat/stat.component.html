@@ -1,1 +1,20 @@
-<p>stat works!</p>
+<div class="table-container" *ngFor="let topL of topsL">
+    <h2>{{topL.nombre}}</h2>
+    <table class="activity-table">
+      <thead>
+        <tr>
+          <th style="text-align: center;">Pos.</th>          
+          <th>Nombre</th>
+          <th style="text-align: center;">Prom.</th>          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let jugador of topL.lista; index as i">
+          <td class="centrarTD">{{i+1}}</td>          
+          <td><span class="status completed">{{jugador.nombre}}</span><span class="equipoSub"> {{jugador.equipo}}</span></td>
+          <td class="izqTD">{{jugador.prom|number: '1.2-2'}}</td>          
+        </tr>        
+      </tbody>
+    </table>
+</div>
+

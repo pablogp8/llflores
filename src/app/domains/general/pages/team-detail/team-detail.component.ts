@@ -1,4 +1,4 @@
-import { Component, Input, inject } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild, inject } from '@angular/core';
 import { Player } from '../../../shared/models/player.model';
 import { CommonModule } from '@angular/common';
 import { EquipoService } from '../../../shared/service/equipo.service';
@@ -12,12 +12,13 @@ import { GeneralDataService } from '../../../shared/service/generalData.service'
   styleUrl: './team-detail.component.css'
 })
 export class TeamDetailComponent {
+  isCollapsed = true;
   @Input() bdid?:number;
   jugadores: Player[] = [];
   private equipoService = inject(EquipoService);
   private equipoLocalService = inject(GeneralDataService);
   nombreEqp = "";
-
+  
   ngOnInit() {
     console.log('aca inicia');
     console.log(this.bdid);
@@ -27,7 +28,7 @@ export class TeamDetailComponent {
     }
   }
 
-  cargaJugadores(bdid: number){
+  cargaJugadores(bdid: number){    
     this.jugadores = [];
     this.equipoService.getListaJugadores(bdid).subscribe({
       next: (data)=> {
@@ -59,5 +60,10 @@ export class TeamDetailComponent {
       }
       
     })
+  }
+
+  toggleCollapse() {
+    console.log('se hizo');
+    this.isCollapsed = !this.isCollapsed;
   }
 }

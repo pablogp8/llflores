@@ -16,4 +16,5 @@ export class HeaderComponent {
   toogleSideMenu(){
     this.hideSideMenu.update(prevstate => !prevstate);
   }
+  
 }

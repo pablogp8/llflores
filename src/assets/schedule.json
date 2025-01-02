@@ -1,0 +1,398 @@
+[
+  {
+    "bdid": 1,
+    "nombre": "Jornada 1",
+    "fecha": "19/10/2024",
+    "descanso": "Talento de Barrio",
+    "juegos": [
+      {
+        "local": "Grizzliez",
+        "visita": "Retro",
+        "hora": "15:00",
+        "mlocal": "36",
+        "mvisita": "32"
+      },
+      {
+        "local": "Astros",
+        "visita": "Hawks",
+        "hora": "16:00",
+        "mlocal": "36",
+        "mvisita": "55"
+      },
+      {
+        "local": "Talento Jr",
+        "visita": "Rocas",
+        "hora": "17:00",
+        "mlocal": "71",
+        "mvisita": "54"
+      },
+      {
+        "local": "U23",
+        "visita": "Indios",
+        "hora": "18:00",
+        "mlocal": "0",
+        "mvisita": "0"
+      }
+    ]
+  },
+  {
+    "bdid": 2,
+    "nombre": "Jornada 2",
+    "fecha": "26/10/2024",
+    "descanso": "U23",
+    "juegos": [
+      {
+        "local": "Retro",
+        "visita": "Hawks",
+        "hora": "15:00",
+        "mlocal": "28",
+        "mvisita": "64"
+      },
+      {
+        "local": "Grizzliez",
+        "visita": "Rocas",
+        "hora": "16:00",
+        "mlocal": "30",
+        "mvisita": "60"
+      },
+      {
+        "local": "Astros",
+        "visita": "Indios",
+        "hora": "17:00",
+        "mlocal": "44",
+        "mvisita": "32"
+      },
+      {
+        "local": "Talento Jr",
+        "visita": "Talento de Barrio",
+        "hora": "18:00",
+        "mlocal": "48",
+        "mvisita": "65"
+      }
+    ]
+  },
+  {
+    "bdid": 3,
+    "nombre": "Jornada 3",
+    "fecha": "02/11/2024",
+    "descanso": "Talento Jr",
+    "juegos": [
+      {
+        "local": "Hawks",
+        "visita": "Rocas",
+        "hora": "15:00",
+        "mlocal": "75",
+        "mvisita": "30"
+      },
+      {
+        "local": "Retro",
+        "visita": "Indios",
+        "hora": "16:00",
+        "mlocal": "38",
+        "mvisita": "122"
+      },
+      {
+        "local": "Grizzliez",
+        "visita": "Talento de Barrio",
+        "hora": "17:00",
+        "mlocal": "19",
+        "mvisita": "124"
+      },
+      {
+        "local": "Astros",
+        "visita": "U23",
+        "hora": "18:00",
+        "mlocal": "35",
+        "mvisita": "64"
+      }
+    ]
+  },
+  {
+    "bdid": 4,
+    "nombre": "Jornada 4",
+    "fecha": "09/11/2024",
+    "descanso": "Astros",
+    "juegos": [
+      {
+        "local": "Rocas",
+        "visita": "Indios",
+        "hora": "15:00",
+        "mlocal": "56",
+        "mvisita": "131"
+      },
+      {
+        "local": "Hawks",
+        "visita": "Talento de Barrio",
+        "hora": "16:00",
+        "mlocal": "30",
+        "mvisita": "40"
+      },
+      {
+        "local": "Retro",
+        "visita": "U23",
+        "hora": "17:00",
+        "mlocal": "43",
+        "mvisita": "107"
+      },
+      {
+        "local": "Grizzliez",
+        "visita": "Talento Jr",
+        "hora": "18:00",
+        "mlocal": "27",
+        "mvisita": "57"
+      }
+    ]
+  },
+  {
+    "bdid": 5,
+    "nombre": "Jornada 5",
+    "fecha": "16/11/2024",
+    "descanso": "Grizzliez",
+    "juegos": [
+      {
+        "local": "Indios",
+        "visita": "Talento de Barrio",
+        "hora": "15:00",
+        "mlocal": "66",
+        "mvisita": "58"
+      },
+      {
+        "local": "Rocas",
+        "visita": "U23",
+        "hora": "16:00",
+        "mlocal": "31",
+        "mvisita": "102"
+      },
+      {
+        "local": "Hawks",
+        "visita": "Talento Jr",
+        "hora": "17:00",
+        "mlocal": "53",
+        "mvisita": "31"
+      },
+      {
+        "local": "Retro",
+        "visita": "Astros",
+        "hora": "18:00",
+        "mlocal": "49",
+        "mvisita": "62"
+      }
+    ]
+  },
+  {
+    "bdid": 6,
+    "nombre": "Jornada 6",
+    "fecha": "23/11/2024",
+    "descanso": "Retro",
+    "juegos": [
+      {
+        "local": "Talento de Barrio",
+        "visita": "U23",
+        "hora": "15:00",
+        "mlocal": "69",
+        "mvisita": "58"
+      },
+      {
+        "local": "Indios",
+        "visita": "Talento Jr",
+        "hora": "16:00",
+        "mlocal": "78",
+        "mvisita": "63"
+      },
+      {
+        "local": "Rocas",
+        "visita": "Astros",
+        "hora": "17:00",
+        "mlocal": "32",
+        "mvisita": "59"
+      },
+      {
+        "local": "Hawks",
+        "visita": "Grizzliez",
+        "hora": "18:00",
+        "mlocal": "109",
+        "mvisita": "38"
+      }
+    ]
+  },
+  {
+    "bdid": 7,
+    "nombre": "Jornada 7",
+    "fecha": "30/11/2024",
+    "descanso": "Hawks",
+    "juegos": [
+      {
+        "local": "U23",
+        "visita": "Talento Jr",
+        "hora": "15:00",
+        "mlocal": "45",
+        "mvisita": "28"
+      },
+      {
+        "local": "Talento de Barrio",
+        "visita": "Astros",
+        "hora": "16:00",
+        "mlocal": "48",
+        "mvisita": "56"
+      },
+      {
+        "local": "Indios",
+        "visita": "Grizzliez",
+        "hora": "17:00",
+        "mlocal": "148",
+        "mvisita": "43"
+      },
+      {
+        "local": "Rocas",
+        "visita": "Retro",
+        "hora": "18:00",
+        "mlocal": "79",
+        "mvisita": "46"
+      }
+    ]
+  },
+  {
+    "bdid": 8,
+    "nombre": "Jornada 8",
+    "fecha": "07/12/2024",
+    "descanso": "Rocas",
+    "juegos": [
+      {
+        "local": "Talento Jr",
+        "visita": "Astros",
+        "hora": "15:00",
+        "mlocal": "25",
+        "mvisita": "60"
+      },
+      {
+        "local": "U23",
+        "visita": "Grizzliez",
+        "hora": "16:00",
+        "mlocal": "20",
+        "mvisita": "0"
+      },
+      {
+        "local": "Talento de Barrio",
+        "visita": "Retro",
+        "hora": "17:00",
+        "mlocal": "71",
+        "mvisita": "55"
+      },
+      {
+        "local": "Indios",
+        "visita": "Hawks",
+        "hora": "18:00",
+        "mlocal": "48",
+        "mvisita": "49"
+      }
+    ]
+  },
+  {
+    "bdid": 9,
+    "nombre": "Jornada 9",
+    "fecha": "14/12/2024",
+    "descanso": "Indios",
+    "juegos": [
+      {
+        "local": "Astros",
+        "visita": "Grizzliez",
+        "hora": "15:00",
+        "mlocal": "20",
+        "mvisita": "0"
+      },
+      {
+        "local": "Talento Jr",
+        "visita": "Retro",
+        "hora": "16:00",
+        "mlocal": "61",
+        "mvisita": "35"
+      },
+      {
+        "local": "U23",
+        "visita": "Hawks",
+        "hora": "17:00",
+        "mlocal": "77",
+        "mvisita": "26"
+      },
+      {
+        "local": "Talento de Barrio",
+        "visita": "Rocas",
+        "hora": "18:00",
+        "mlocal": "85",
+        "mvisita": "48"
+      }
+    ]
+  },
+  {
+    "bdid": 10,
+    "nombre": "Cuartos de final",
+    "fecha": "04/01/2025",
+    "descanso": "Indios",
+    "juegos": [
+      {
+        "local": "Indios",
+        "visita": "Astros",
+        "hora": "15:30",
+        "mlocal": "0",
+        "mvisita": "0"
+      },
+      {
+        "local": "Talento Jr",
+        "visita": "Hawks",
+        "hora": "16:30",
+        "mlocal": "0",
+        "mvisita": "0"
+      },
+      {
+        "local": "Rocas",
+        "visita": "Talento de Barrio",
+        "hora": "17:30",
+        "mlocal": "0",
+        "mvisita": "0"
+      },
+      {
+        "local": "Retro",
+        "visita": "U23",
+        "hora": "18:30",
+        "mlocal": "0",
+        "mvisita": "0"
+      }
+    ]
+  },
+  {
+    "bdid": 11,
+    "nombre": "Cuartos de final",
+    "fecha": "11/01/2025",
+    "descanso": "Indios",
+    "juegos": [
+      {
+        "local": "U23",
+        "visita": "Retro",
+        "hora": "15:30",
+        "mlocal": "0",
+        "mvisita": "0"
+      },
+      {
+        "local": "Talento de Barrio",
+        "visita": "Rocas",        
+        "hora": "16:30",
+        "mlocal": "0",
+        "mvisita": "0"
+      },
+      {
+        "local": "Hawks",
+        "visita": "Talento Jr",        
+        "hora": "17:30",
+        "mlocal": "0",
+        "mvisita": "0"
+      },
+      {
+        "local": "Astros",
+        "visita": "Indios",
+        "hora": "18:30",
+        "mlocal": "0",
+        "mvisita": "0"
+      }
+    ]
+  }
+]

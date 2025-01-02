@@ -17,4 +17,20 @@ export interface Player{
     blocks?: number;
     steals?: number;
     lost?: number;
+    mvp?: number;
+    juegos?: statsJ[];
+}
+
+export interface statsJ{
+    jornada: number;
+	tecnica: string;
+	points: string;
+	assists: string;
+	rebounds: string;
+	steals: string;
+	points3: string;
+	blocks: string;
+	lost: string;
+	anti: string;
+	faltas: string;
 }

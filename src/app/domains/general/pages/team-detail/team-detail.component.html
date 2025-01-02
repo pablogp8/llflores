@@ -2,7 +2,7 @@
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
         <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{{nombreEqp}}</h2>
-            <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+            <!--<p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>-->
         </div> 
         <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2" >
             <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700" *ngFor="let jugador of jugadores">
@@ -10,14 +10,52 @@
                     <img class="imagen-ajustada  sm:rounded-l-lg" src="../../../../../assets/jugadorff.jpeg" alt="Bonnie Avatar">
                 </div>
                 <div class="p-3">
-                    <h3 class="text-base font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">{{jugador.nombre}} {{jugador.apellido}}</a>
+                    <h3 class="text-base font-bold tracking-tight text-gray-900 dark:text-white" style="text-align: center;">
+                        {{jugador.nombre}} {{jugador.apellido}}
                     </h3>
-                    <span class="text-gray-500 dark:text-gray-400">Camisola #{{jugador.numb}}</span>
-                    <p class="mt-1 mb-3 font-light text-gray-500 dark:text-gray-400">Puntos: {{jugador.points}} Asistencias: {{jugador.assists}} Rebotes: {{jugador.rebounds}} Robos: {{jugador.steals}}</p>
-                    <p class="mt-1 mb-3 font-light text-gray-500 dark:text-gray-400">Puntos de 3: {{jugador.points3}} Bloqueos: {{jugador.blocks}} Perdidas: {{jugador.lost}} </p>                    
+                    <p class="mt-1 text-gray-500 dark:text-gray-400" style="text-align: center;">Camisola <span class="completedC">#{{jugador.numb}}</span> MVP: <span class="completedC">{{jugador.mvp|number: '1.1-1'}}</span> Pts: <span class="completedC">{{jugador.points|number: '1.1-1'}}</span></p>
+                    <p class="font-light text-gray-500 dark:text-gray-400" style="text-align: center;">Asist: <span class="completedC"> {{jugador.assists|number: '1.1-1'}}</span> Rebotes: <span class="completedC">{{jugador.rebounds|number: '1.1-1'}} </span> Robos: <span class="completedC">{{jugador.steals|number: '1.1-1'}}</span></p>
+                    <p class="mb-2 font-light text-gray-500 dark:text-gray-400" style="text-align: center;">Pts 3: <span class="completedC">{{jugador.points3|number: '1.1-1'}}</span> Bloqueos: <span class="completedC">{{jugador.blocks|number: '1.1-1'}}</span> Perd: <span class="errorC">{{jugador.lost|number: '1.1-1'}}</span> </p>                    
+                    <div id="show-hide-collapse-heading" class="w-full overflow-x-auto transition-[height] duration-300" aria-labelledby="show-hide-collapse" *ngIf="!isCollapsed">
+                        <table class="activity-table">
+                            <thead>
+                              <tr>
+                                <th class="centrarTD">Jor</th>
+                                <th class="centrarTD">Pts</th>
+                                <th class="centrarTD">Asis</th>
+                                <th class="centrarTD">Reb</th>
+                                <th class="centrarTD">Pts3</th>
+                                <th class="centrarTD">Rob</th>                                
+                                <th class="centrarTD">Tap</th>
+                                <th class="centrarTD">Per</th>
+                                <th class="centrarTD">Tec</th>
+                                <th class="centrarTD">Ant</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let juego of jugador.juegos">
+                                <td class="centrarTD colJ">{{juego.jornada}}</td>
+                                <td class="derTD padL">{{juego.points}}</td>
+                                <td class="derTD padL">{{juego.assists}}</td>
+                                <td class="derTD padL">{{juego.rebounds}}</td>
+                                <td class="derTD padL">{{juego.points3}}</td>
+                                <td class="derTD padL">{{juego.steals}}</td>
+                                <td class="derTD padL">{{juego.blocks}}</td>
+                                <td class="derTD padL errorC">{{juego.lost}}</td>
+                                <td class="derTD padL errorC">{{juego.tecnica}}</td>
+                                <td class="derTD padL errorC">{{juego.anti}}</td>
+                              </tr>      
+                            </tbody>
+                        </table>
+                      </div>
+                    <button type="button" class="mt-2 collapse-toggle link link-primary inline-flex items-center" id="show-hide-collapse" aria-expanded="false" aria-controls="show-hide-collapse-heading" data-collapse="#show-hide-collapse-heading" (click)="toggleCollapse()">
+                        <span style="color: white; font-size: 0.775em;" *ngIf="isCollapsed">Ver mas...</span>
+                        <span style="color: white; font-size: 0.775em;" *ngIf="!isCollapsed">... ocultar</span>
+                        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 ms-2 size-4"></span>
+                      </button>
                 </div>
             </div>   
         </div>  
+        
     </div>
   </section>

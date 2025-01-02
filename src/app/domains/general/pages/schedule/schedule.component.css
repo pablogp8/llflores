@@ -1,0 +1,83 @@
+  .calendar-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: #1e1e2f;
+    /*border-radius: 10px;*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .calendar {
+    /*display: flex;
+    flex-direction: column;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;    
+  }
+  
+  .match {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    background-color: #292938;
+    /*border-radius: 8px;*/
+
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .teams {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    border-right: 1px solid #b0b0b0;
+  }
+  
+  .team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .team img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .marcador {
+    color: #ffffff;
+    padding-right: 5px;
+  }
+
+  .details {
+    text-align: center;
+    font-size: 0.7em;
+    color: #b0b0b0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin: 0px;
+  }
+  span{
+    font-size: 1.0em;
+    color: #b0b0b0;
+  }
+  
+  /* Estilos responsivos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .calendar{
+        display: flex;
+        flex-direction: column;
+    }
+    
+  }
+  

@@ -1,0 +1,258 @@
+[
+  {
+    "bdid": 1,
+    "nombre": "Top MVP",
+    "rama": "masculino",
+    "lista": [
+      {
+        "nombre": "Andgelow Jesús Santos Robles",
+        "prom": "44.25",
+        "equipo": "Indios"
+      },
+      {
+        "nombre": "Heber Fernando David Morales Aguilar",
+        "prom": "37.38",
+        "equipo": "U23"
+      },
+      {
+        "nombre": "Obed Arriola",
+        "prom": "37",
+        "equipo": "Hawks"
+      },
+      {
+        "nombre": "Brandon Giron",
+        "prom": "35.75",
+        "equipo": "Talento de Barrio"
+      },
+      {
+        "nombre": "Luis Aroldo Morales Noriega",
+        "prom": "35",
+        "equipo": "Rocas"
+      }
+    ]
+  },
+  {
+    "bdid": 2,
+    "nombre": "Top Puntos",
+    "rama": "masculino",
+    "lista": [
+      {
+        "nombre": "Andgelow Jesús Santos Robles",
+        "prom": "28",
+        "equipo": "Indios"
+      },
+      {
+        "nombre": "Obed Arriola",
+        "prom": "25.63",
+        "equipo": "Hawks"
+      },
+      {
+        "nombre": "Luis Aroldo Morales Noriega",
+        "prom": "23.88",
+        "equipo": "Rocas"
+      },
+      {
+        "nombre": "Brandon Giron",
+        "prom": "22",
+        "equipo": "Talento de Barrio"
+      },
+      {
+        "nombre": "Heber Fernando David Morales Aguilar",
+        "prom": "21.25",
+        "equipo": "U23"
+      }
+    ]
+  },
+  {
+    "bdid": 3,
+    "nombre": "Top Rebotes",
+    "rama": "masculino",
+    "lista": [
+      {
+        "nombre": "Juan Carlos Vásquez Sajche",
+        "prom": "6.38",
+        "equipo": "Astros"
+      },
+      {
+        "nombre": "Brandon Giron",
+        "prom": "5.63",
+        "equipo": "Talento de Barrio"
+      },
+      {
+        "nombre": "Javier Corado",
+        "prom": "5.63",
+        "equipo": "Talento Jr"
+      },
+      {
+        "nombre": "Kristofer Higueros",
+        "prom": "5.5",
+        "equipo": "Talento de Barrio"
+      },
+      {
+        "nombre": "César Rinaldi Menchú Vásquez",
+        "prom": "5.38",
+        "equipo": "Indios"
+      }
+    ]
+  },
+  {
+    "bdid": 4,
+    "nombre": "Top Asistencias",
+    "rama": "masculino",
+    "lista": [
+      {
+        "nombre": "Manuel Octavio Rodríguez Pinzón",
+        "prom": "9.75",
+        "equipo": "Indios"
+      },
+      {
+        "nombre": "Luis Aroldo Morales Noriega",
+        "prom": "5.75",
+        "equipo": "Rocas"
+      },
+      {
+        "nombre": "Ervin José Mucía Coyote",
+        "prom": "4",
+        "equipo": "U23"
+      },
+      {
+        "nombre": "Andgelow Jesús Santos Robles",
+        "prom": "3.75",
+        "equipo": "Indios"
+      },
+      {
+        "nombre": "Obed Arriola",
+        "prom": "3.13",
+        "equipo": "Hawks"
+      }
+    ]
+  },
+  {
+    "bdid": 5,
+    "nombre": "Top Robos",
+    "rama": "masculino",
+    "lista": [
+      {
+        "nombre": "Ervin José Mucía Coyote",
+        "prom": "1.5",
+        "equipo": "U23"
+      },
+      {
+        "nombre": "Obed Arriola",
+        "prom": "1.25",
+        "equipo": "Hawks"
+      },
+      {
+        "nombre": "Milton Ajcet",
+        "prom": "1.13",
+        "equipo": "Talento de Barrio"
+      },
+      {
+        "nombre": "Carlos Fernando Alvarado Rodríguez",
+        "prom": "1",
+        "equipo": "Indios"
+      },
+      {
+        "nombre": "Daniel Ortiz",
+        "prom": "1",
+        "equipo": "Talento Jr"
+      }
+    ]
+  },
+  {
+    "bdid": 6,
+    "nombre": "Top Puntos de 3",
+    "rama": "masculino",
+    "lista": [
+      {
+        "nombre": "Kristofer Higueros",
+        "prom": "2.13",
+        "equipo": "Talento de Barrio"
+      },
+      {
+        "nombre": "Luis Carlos Álvarez Escobar",
+        "prom": "1.88",
+        "equipo": "Retro"
+      },
+      {
+        "nombre": "Pablo José Tucubal Galindo",
+        "prom": "1.5",
+        "equipo": "Astros"
+      },
+      {
+        "nombre": "Ervin José Mucía Coyote",
+        "prom": "1.5",
+        "equipo": "U23"
+      },
+      {
+        "nombre": "Alex Ajcet",
+        "prom": "1.38",
+        "equipo": "Talento Jr"
+      }
+    ]
+  },
+  {
+    "bdid": 7,
+    "nombre": "Top Tapas",
+    "rama": "masculino",
+    "lista": [
+      {
+        "nombre": "Luis Aroldo Morales Noriega",
+        "prom": "1",
+        "equipo": "Rocas"
+      },
+      {
+        "nombre": "Daniel Ortiz",
+        "prom": "0.88",
+        "equipo": "Talento Jr"
+      },
+      {
+        "nombre": "Mario André Muñoz",
+        "prom": "0.63",
+        "equipo": "Astros"
+      },
+      {
+        "nombre": "Daniel Cojti",
+        "prom": "0.5",
+        "equipo": "Talento de Barrio"
+      },
+      {
+        "nombre": "Estuardo Hernan A. Pinzón Moreira",
+        "prom": "0.38",
+        "equipo": "Astros"
+      }
+    ]
+  },
+  {
+    "bdid": 8,
+    "nombre": "Top Perdidas",
+    "rama": "masculino",
+    "lista": [
+      {
+        "nombre": "Obed Arriola",
+        "prom": "5.13",
+        "equipo": "Hawks"
+      },
+      {
+        "nombre": "Brandon Giron",
+        "prom": "5",
+        "equipo": "Talento de Barrio"
+      },
+      {
+        "nombre": "Luis Aroldo Morales Noriega",
+        "prom": "4.13",
+        "equipo": "Rocas"
+      },
+      {
+        "nombre": "Edgar Geovanny Jutzutz Sepet",
+        "prom": "4",
+        "equipo": "Rocas"
+      },
+      {
+        "nombre": "Luis Eduardo Aragon",
+        "prom": "3.5",
+        "equipo": "Rocas"
+      }
+    ]
+  }
+]
